@@ -39,7 +39,7 @@ Model:
   num_heads_upsample: 4
 
 Train:
-  epoch: 1000
+  epoch: 2
   loss_type: 'linear'
   ema_rate: 0.9999
   ema: True
@@ -58,6 +58,3 @@ Sample:
   batch_size: 512
   last_only: True
   total_num: 12500
-
-
-
