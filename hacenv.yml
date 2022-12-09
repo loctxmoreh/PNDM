@@ -4,7 +4,7 @@ channels:
     - conda-forge
 dependencies:
     - python=3.8
-    - openmpi-mpicc               # for mpi4py
+    - openmpi-mpicc               # for building `mpi4py` in `requirements.txt`
     - pip
     - pip:
         - protobuf==3.13.0
