@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-mkdir -p temp/train
-config="iddpm_cifar10"
+DEFAULT_CONFIG="ddim_cifar10"
 
+config="${1:-$DEFAULT_CONFIG}"
+
+mkdir -p temp/train
 /usr/bin/env python3 main.py \
     --runner train \
     --device cuda \
