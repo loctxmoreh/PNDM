@@ -2,6 +2,7 @@
 ![](https://badgen.net/badge/Moreh-HAC/failed/red) ![](https://badgen.net/badge/NVIDIA-A100/passed/green)
 
 *[2022.12.05]* Currently testing on Moreh 22.12.0
+
 *[2022.12.09]* Train successfully on A100 machine
 
 ## Prepare
@@ -27,6 +28,16 @@ update-moreh --force --target 22.12.0
 ## Run
 
 ### Evaluate existing models
+```bash
+# By default, run `evaluate.sh` with no argument will default to `ddim_cifar10`
+./evaluate.sh
+
+# or run with `iddpm_cifar10`
+./evaluate.sh iddpm_cifar10
+```
+
+**TODO:**
+[ ] Try different `--method` arguments
 
 ### Training
 
