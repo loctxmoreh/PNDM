@@ -1,17 +1,16 @@
-name: pndm
+name: pndm2
 channels:
-    - pytorch
     - conda-forge
 dependencies:
     - python=3.8
+    - protobuf=3.13.0
     - openmpi-mpicc               # for building `mpi4py` in `requirements.txt`
     - pip
     - pip:
-        - protobuf==3.13.0
-        - torch==1.7.1+cu110.moreh22.12.1
-        - moreh-driver==22.12.1
+        - torch==1.10.0+cpuonly.moreh0.2.0
+        - moreh-driver==0.2.0
         - -r requirements.txt
 
 # conda env create -f hacemv.yml
 # conda activate pndm
-# update-moreh --force --target 22.12.0
+# update-moreh --force --driver-only --target 0.2.0
