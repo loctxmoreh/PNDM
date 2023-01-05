@@ -1,0 +1,16 @@
+# vim: set shiftwidth=2 tabstop=2 softtabstop=-1 expandtab:
+name: pndm
+channels:
+  - default
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pytorch=1.12.1
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.3
+  - openmpi-mpicc             # for building `mpi4py` in `requirements.txt`
+  - pip
+  - pip:
+    - -r requirements.txt
